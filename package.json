@@ -1,6 +1,6 @@
 {
   "name": "koa-request-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Koa middleware to log in and out requests",
   "main": "lib/koa-request-logger.js",
   "scripts": {
