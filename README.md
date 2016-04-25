@@ -1,4 +1,5 @@
-﻿# Koa request logger
+﻿Koa request logger [![NPM version][npm-image]][npm-url]
+============================
 
 Simple middleware **for Koa 2** to log in and out request, with diff time, and custom logger.
 
@@ -61,3 +62,6 @@ app.listen(3000);
 ## License
 
 MIT
+
+[npm-image]: https://img.shields.io/npm/v/koa-request-logger.svg?style=flat
+[npm-url]: https://npmjs.org/package/koa-request-logger
