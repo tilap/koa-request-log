@@ -27,6 +27,10 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/tilap/koa-request-logger#readme",
+  "dependencies": {
+    "assert": "1.3.0",
+    "shortid": "2.2.6"
+  },
   "devDependencies": {
     "babel-cli": "6.6.5",
     "babel-eslint": "6.0.2",
