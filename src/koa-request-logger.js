@@ -10,8 +10,14 @@ module.exports = ({ logger = console, method = 'log', format = defaultFormat } =
   return async (ctx, next) => {
     const start = Date.now();
     const id = shortid.generate();
-    logger[method](format(ctx, id, true));
+    let msg = format(ctx, id, true);
+    if (msg) {
+      logger[method](msg);
+    }
     await next();
-    logger[method](format(ctx, id, false, new Date - start));
+    msg = format(ctx, id, false, new Date - start);
+    if (msg) {
+      logger[method](msg);
+    }
   };
 };
