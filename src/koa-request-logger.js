@@ -6,7 +6,7 @@ const defaultFormat = (ctx, id, isIn = true, timeDiff = null) => (isIn ?
   `[${id} OUT] ${ctx.request.method} ${ctx.request.url} [${ctx.status}] ${timeDiff}ms`);
 
 module.exports = ({ logger = console, method = 'log', format = defaultFormat } = {}) => {
-  assert(logger.hasOwnProperty(method), new Error('Logger does not have the method "${method}"'));
+  assert(logger.hasOwnProperty(method), new Error(`Logger does not have the method "${method}"`));
   return async (ctx, next) => {
     const start = Date.now();
     const id = shortid.generate();
